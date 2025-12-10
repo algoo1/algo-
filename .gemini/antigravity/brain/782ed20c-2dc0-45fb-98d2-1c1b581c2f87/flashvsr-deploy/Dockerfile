@@ -17,6 +17,8 @@ RUN pip install --no-cache-dir packaging ninja
 
 # 1. Install Block-Sparse-Attention (Critical Step)
 # This usually takes time and memory.
+# Limit max jobs to prevent OOM/Crash on Docker Desktop
+ENV MAX_JOBS=1
 WORKDIR /tmp
 RUN git clone https://github.com/mit-han-lab/Block-Sparse-Attention && \
     cd Block-Sparse-Attention && \

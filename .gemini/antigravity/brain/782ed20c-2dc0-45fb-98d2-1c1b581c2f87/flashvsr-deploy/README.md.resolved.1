@@ -16,25 +16,7 @@ docker run --gpus all -p 7860:7860 flashvsr
 ```
 Open `http://localhost:7860`.
 
-### 2. Deploy directly on RunPod (Faster & Recommended)
-If building locally is too slow or fails, do this:
-
-1.  **Create a Pod** on RunPod using the **"RunPod PyTorch 2.1"** template.
-    - GPU: NVIDIA A100 (80GB).
-2.  **Connect** to the Pod (via Web Terminal or Jupyter Lab).
-3.  **Run these commands** inside the Pod:
-    ```bash
-    git clone https://github.com/algonum1/flashvsr
-    cd flashvsr
-    bash setup_runpod.sh
-    ```
-4.  **Start the App**:
-    ```bash
-    python app.py
-    ```
-5.  **Access**: Use the "Connect" -> "HTTP Service (Port 7860)" button.
-
-### 3. Deploy via Docker Image (Old Method)
+### 2. Deploy on RunPod
 1.  **Push** this repository to GitHub.
 2.  **Build** the Docker image (or let RunPod build it if using a template that supports it, but usually better to push to Docker Hub/GHCR).
     *   Command: `docker build -t yourusername/flashvsr:latest .`
