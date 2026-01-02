@@ -1,0 +1,7 @@
+# robots.txt for Algo AI Chatbot Landing Page
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml

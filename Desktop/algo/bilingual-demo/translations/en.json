@@ -1,0 +1,72 @@
+{
+    "nav.home": "Home",
+    "nav.about": "About",
+    "nav.services": "Services",
+    "nav.contact": "Contact",
+    "lang.switch": "العربية",
+    "language": {
+        "en": "English",
+        "ar": "Arabic",
+        "current": "Current language: English",
+        "switch_to": "Switch to Arabic"
+    },
+    
+    "hero.title": "Welcome to Our Bilingual Website",
+    "hero.subtitle": "Experience seamless language switching between English and Arabic",
+    "hero.cta": "Learn More",
+    
+    "about.title": "About Us",
+    "about.desc": "We are a company dedicated to providing high-quality bilingual web solutions for businesses and organizations around the world. Our team of experts specializes in creating websites that seamlessly support both English and Arabic languages.",
+    "about.mission": "Our mission is to bridge language barriers and help businesses reach wider audiences through effective bilingual web presence.",
+    
+    "features.title": "Our Features",
+    "feature1.title": "Responsive Design",
+    "feature1.desc": "Our website looks great on all devices, from mobile phones to desktop computers.",
+    "feature2.title": "Bilingual Support",
+    "feature2.desc": "Full support for both English and Arabic with proper RTL implementation.",
+    "feature3.title": "Fast Performance",
+    "feature3.desc": "Optimized code ensures the website loads quickly and runs smoothly.",
+    
+    "services.title": "Our Services",
+    "service1.title": "Website Development",
+    "service1.desc": "Custom website development with bilingual support built-in from the ground up.",
+    "service2.title": "Content Translation",
+    "service2.desc": "Professional translation services ensuring your content reads naturally in both languages.",
+    "service3.title": "UI/UX Design",
+    "service3.desc": "Beautiful, intuitive designs that work perfectly in both LTR and RTL layouts.",
+    "service4.title": "Ongoing Support",
+    "service4.desc": "Continuous technical support and content updates in both languages.",
+    
+    "testimonials.title": "What Our Clients Say",
+
+    "testimonial2.text": "We were impressed by how well they handled the RTL layout for Arabic. Everything from the navigation to the forms works perfectly regardless of which language is selected.",
+    "testimonial2.author": "Mohammed Al-Farsi",
+    "testimonial2.position": "CEO, Global Solutions",
+    
+    "cta.title": "Ready to Get Started?",
+    "cta.desc": "Join thousands of satisfied customers using our services worldwide.",
+    "cta.button": "Contact Us",
+    
+    "contact.title": "Contact Us",
+    "contact.desc": "Have questions or ready to start your project? Get in touch with us today.",
+    "contact.form.name": "Your Name",
+    "contact.form.email": "Email Address",
+    "contact.form.subject": "Subject",
+    "contact.form.message": "Your Message",
+    "contact.form.submit": "Send Message",
+    "contact.address.title": "Our Address",
+    "contact.phone.title": "Phone Number",
+    "contact.email.title": "Email",
+    
+    "footer.about": "About Us",
+    "footer.about.desc": "We are a company dedicated to providing high-quality bilingual web solutions.",
+    "footer.links": "Quick Links",
+    "footer.services": "Services",
+    "footer.contact": "Contact Info",
+    "footer.blog": "Blog",
+    "footer.careers": "Careers",
+    "footer.address": "123 Street Name, City, Country",
+    "footer.phone": "+1 234 567 890",
+    "footer.email": "info@example.com",
+    "footer.copyright": "© 2023 Bilingual Website. All rights reserved."
+}

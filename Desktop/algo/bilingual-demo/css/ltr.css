@@ -1,0 +1,156 @@
+/* LTR (Left-to-Right) specific styles for English language */
+
+/* Text alignment */
+.text-start {
+    text-align: left;
+}
+
+.text-end {
+    text-align: right;
+}
+
+/* Header and Logo */
+.header-logo {
+    float: left;
+    margin-right: 1.5rem;
+}
+
+.nav-menu {
+    float: right;
+}
+
+/* Margin and padding helpers */
+.ms-auto {
+    margin-left: auto !important;
+}
+
+.me-auto {
+    margin-right: auto !important;
+}
+
+.ps-1 { padding-left: 0.25rem !important; }
+.ps-2 { padding-left: 0.5rem !important; }
+.ps-3 { padding-left: 1rem !important; }
+.ps-4 { padding-left: 1.5rem !important; }
+.ps-5 { padding-left: 3rem !important; }
+
+.pe-1 { padding-right: 0.25rem !important; }
+.pe-2 { padding-right: 0.5rem !important; }
+.pe-3 { padding-right: 1rem !important; }
+.pe-4 { padding-right: 1.5rem !important; }
+.pe-5 { padding-right: 3rem !important; }
+
+.ms-1 { margin-left: 0.25rem !important; }
+.ms-2 { margin-left: 0.5rem !important; }
+.ms-3 { margin-left: 1rem !important; }
+.ms-4 { margin-left: 1.5rem !important; }
+.ms-5 { margin-left: 3rem !important; }
+
+.me-1 { margin-right: 0.25rem !important; }
+.me-2 { margin-right: 0.5rem !important; }
+.me-3 { margin-right: 1rem !important; }
+.me-4 { margin-right: 1.5rem !important; }
+.me-5 { margin-right: 3rem !important; }
+
+/* Form elements */
+input, textarea, select {
+    text-align: left;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 2rem;
+    padding-right: 0;
+}
+
+/* Dropdown menus */
+.dropdown-menu {
+    left: 0;
+    right: auto;
+}
+
+/* Icons and directional elements */
+.icon-arrow {
+    transform: rotate(0deg);
+}
+
+.icon-back::before {
+    content: "\f060"; /* Font Awesome left arrow */
+}
+
+.icon-forward::before {
+    content: "\f061"; /* Font Awesome right arrow */
+}
+
+/* Quote styling */
+blockquote {
+    border-left: 4px solid var(--primary-color);
+    border-right: none;
+    padding-left: 1rem;
+    padding-right: 0;
+}
+
+/* Navigation indicators */
+.breadcrumb-separator::before {
+    content: "/";
+}
+
+/* Carousel and slider controls */
+.carousel-prev {
+    left: 10px;
+    right: auto;
+}
+
+.carousel-next {
+    right: 10px;
+    left: auto;
+}
+
+/* Progress indicators */
+.progress-bar {
+    direction: ltr;
+}
+
+/* Tables */
+table th, table td {
+    text-align: left;
+}
+
+/* Timeline elements */
+.timeline-item {
+    padding-left: 2rem;
+    border-left: 2px solid var(--border-color);
+    margin-left: 1rem;
+}
+
+/* Specific component adjustments */
+.feature-icon {
+    margin-right: auto;
+}
+
+.language-toggle i {
+    margin-right: 0.25rem;
+    margin-left: 0;
+}
+
+/* Footer adjustments */
+.footer-links li::before {
+    content: "\203A";
+    margin-right: 0.5rem;
+}
+
+/* Mobile menu button */
+.menu-toggle {
+    margin-left: auto;
+}
+
+/* Search box icon positioning */
+.search-box .search-icon {
+    left: auto;
+    right: 10px;
+}
+
+.search-box input {
+    padding-right: 2.5rem;
+    padding-left: 1rem;
+}

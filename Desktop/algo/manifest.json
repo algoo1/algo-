@@ -1,0 +1,17 @@
+{
+  "name": "Algo AI Chatbot Agency",
+  "short_name": "Algo",
+  "description": "Revolutionize customer experience with smart AI chatbots",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A23",
+  "theme_color": "#A020F0",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

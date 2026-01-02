@@ -1,0 +1,208 @@
+/* RTL (Right-to-Left) specific styles for Arabic language */
+
+/* Text alignment */
+.text-start {
+    text-align: right;
+}
+
+.text-end {
+    text-align: left;
+}
+
+/* Header and Logo */
+.header-logo {
+    float: right;
+    margin-left: 1.5rem;
+    margin-right: 0;
+}
+
+.nav-menu {
+    float: left;
+}
+
+/* Margin and padding helpers */
+.ms-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+.me-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+.ps-1 { padding-right: 0.25rem !important; padding-left: 0 !important; }
+.ps-2 { padding-right: 0.5rem !important; padding-left: 0 !important; }
+.ps-3 { padding-right: 1rem !important; padding-left: 0 !important; }
+.ps-4 { padding-right: 1.5rem !important; padding-left: 0 !important; }
+.ps-5 { padding-right: 3rem !important; padding-left: 0 !important; }
+
+.pe-1 { padding-left: 0.25rem !important; padding-right: 0 !important; }
+.pe-2 { padding-left: 0.5rem !important; padding-right: 0 !important; }
+.pe-3 { padding-left: 1rem !important; padding-right: 0 !important; }
+.pe-4 { padding-left: 1.5rem !important; padding-right: 0 !important; }
+.pe-5 { padding-left: 3rem !important; padding-right: 0 !important; }
+
+.ms-1 { margin-right: 0.25rem !important; margin-left: 0 !important; }
+.ms-2 { margin-right: 0.5rem !important; margin-left: 0 !important; }
+.ms-3 { margin-right: 1rem !important; margin-left: 0 !important; }
+.ms-4 { margin-right: 1.5rem !important; margin-left: 0 !important; }
+.ms-5 { margin-right: 3rem !important; margin-left: 0 !important; }
+
+.me-1 { margin-left: 0.25rem !important; margin-right: 0 !important; }
+.me-2 { margin-left: 0.5rem !important; margin-right: 0 !important; }
+.me-3 { margin-left: 1rem !important; margin-right: 0 !important; }
+.me-4 { margin-left: 1.5rem !important; margin-right: 0 !important; }
+.me-5 { margin-left: 3rem !important; margin-right: 0 !important; }
+
+/* Form elements */
+input, textarea, select {
+    text-align: right;
+}
+
+/* Lists */
+ul, ol {
+    padding-right: 2rem;
+    padding-left: 0;
+}
+
+/* Dropdown menus */
+.dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+/* Icons and directional elements */
+.icon-arrow {
+    transform: rotate(180deg);
+}
+
+.icon-back::before {
+    content: "\f061"; /* Font Awesome right arrow (flipped for RTL) */
+}
+
+.icon-forward::before {
+    content: "\f060"; /* Font Awesome left arrow (flipped for RTL) */
+}
+
+/* Quote styling */
+blockquote {
+    border-right: 4px solid var(--primary-color);
+    border-left: none;
+    padding-right: 1rem;
+    padding-left: 0;
+}
+
+/* Navigation indicators */
+.breadcrumb-separator::before {
+    content: "/";
+    /* No need to change separator as slash works in both directions */
+}
+
+/* Carousel and slider controls */
+.carousel-prev {
+    right: 10px;
+    left: auto;
+}
+
+.carousel-next {
+    left: 10px;
+    right: auto;
+}
+
+/* Progress indicators */
+.progress-bar {
+    direction: rtl;
+}
+
+/* Tables */
+table th, table td {
+    text-align: right;
+}
+
+/* Timeline elements */
+.timeline-item {
+    padding-right: 2rem;
+    border-right: 2px solid var(--border-color);
+    border-left: none;
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+/* Specific component adjustments */
+.feature-icon {
+    margin-left: auto;
+}
+
+.language-toggle i {
+    margin-left: 0.25rem;
+    margin-right: 0;
+}
+
+/* Footer adjustments */
+.footer-links li::before {
+    content: "\203A";
+    margin-left: 0.5rem;
+    margin-right: 0;
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+/* Mobile menu button */
+.menu-toggle {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+/* Search box icon positioning */
+.search-box .search-icon {
+    right: auto;
+    left: 10px;
+}
+
+.search-box input {
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+}
+
+/* Additional RTL adjustments */
+
+/* Fix for input placeholder alignment */
+input::placeholder {
+    text-align: right;
+}
+
+/* Fix for select arrows */
+select {
+    background-position: left 0.5rem center;
+    padding-right: 1rem;
+    padding-left: 2rem;
+}
+
+/* Fix for checkbox and radio positioning */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+/* Fix for number inputs */
+input[type="number"] {
+    direction: rtl;
+}
+
+/* Fix for date inputs */
+input[type="date"] {
+    direction: ltr;
+    text-align: right;
+}
+
+/* Fix for Arabic numerals in certain contexts */
+.ar-numbers {
+    font-feature-settings: "tnum";
+}
+
+/* Adjust letter spacing for Arabic */
+.ar-text {
+    letter-spacing: 0;
+}

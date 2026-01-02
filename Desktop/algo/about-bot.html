@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Algo - AI Chatbot Agency. Meet Algo – your 24/7 smart assistant.">
+    <title>About Algo - AI Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#A020F0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B75CFF',
+                        accent: '#FF00FF',
+                        background: '#0A0A23',
+                        text: '#E0E0E0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-text font-sans">
+    <!-- Enhanced 3D Moving Background -->
+    <div class="background-animation">
+        <!-- Shooting Stars -->
+        <div class="shooting-stars"></div>
+        <!-- Twinkling Stars -->
+        <div class="twinkling-stars"></div>
+        <!-- Glowing Particles -->
+        <div class="glowing-particles"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="fixed w-full top-0 z-50 glass border-b border-white/20 backdrop-blur-xl">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center group">
+                    <div class="relative">
+                        <img src="image/logo.png" alt="Logo" class="h-14 w-auto transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+                    </div>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="relative text-text hover:text-white transition-all duration-300 group">
+                        <span class="relative z-10">Home</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -m-2"></div>
+                    </a>
+                    <a href="index.html#features" class="relative text-text hover:text-white transition-all duration-300 group">
+                        <span class="relative z-10">Features</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -m-2"></div>
+                    </a>
+                    <a href="index.html#pricing" class="relative text-text hover:text-white transition-all duration-300 group">
+                        <span class="relative z-10">Pricing</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -m-2"></div>
+                    </a>
+                    <a href="index.html#demo" class="relative text-text hover:text-white transition-all duration-300 group">
+                        <span class="relative z-10">Demo</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -m-2"></div>
+                    </a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text hover:text-white transition-all duration-300 p-2 rounded-lg hover:bg-white/10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-background z-40 hidden flex-col items-center justify-center space-y-8 md:hidden">
+        <button id="close-menu-button" class="absolute top-4 right-4 text-text hover:text-white transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <a href="index.html" class="text-xl font-semibold bg-gradient-to-r from-primary to-accent p-2 rounded-md">Home</a>
+        <a href="index.html#features" class="text-xl font-semibold bg-gradient-to-r from-primary to-accent p-2 rounded-md">Features</a>
+        <a href="index.html#pricing" class="text-xl font-semibold bg-gradient-to-r from-primary to-accent p-2 rounded-md">Pricing</a>
+        <a href="index.html#demo" class="text-xl font-semibold bg-gradient-to-r from-primary to-accent p-2 rounded-md">Demo</a>
+    </div>
+
+    <!-- About Bot Section -->
+    <section class="pt-32 pb-20 relative overflow-hidden min-h-screen">
+        <!-- Enhanced Hero Background -->
+        <div class="hero-background-animation absolute inset-0 z-0">
+            <!-- Primary Gradient Orbs -->
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-radial from-primary/30 via-primary/10 to-transparent rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-radial from-accent/25 via-accent/8 to-transparent rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto">
+                <div class="glass p-8 md:p-12 rounded-2xl mb-12 animate-fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 hero-title">🤖 Smart AI Chatbot – Algo</h1>
+                    <p class="text-xl md:text-2xl mb-8 hero-subtitle text-text/90">Meet Algo – your 24/7 smart assistant.</p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3">🧠</span>
+                            <span>Understands images and messages with context</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3">⚡</span>
+                            <span>Fast, intelligent, and always online</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3">💬</span>
+                            <span>Handles customer queries with smart, persuasive sales replies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3">🤖</span>
+                            <span>Trained on your business needs—zero coding required</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3">🌐</span>
+                            <span>Available 24/7 to engage, convert, and support your users</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="glass p-6 rounded-xl mb-8 border border-primary/30 animate-glow-pulse">
+                        <h2 class="text-2xl font-bold mb-4 flex items-center gradient-text">
+                            <span class="text-3xl mr-3">🆓</span>
+                            <span>Try Algo Free for 10 Days!</span>
+                        </h2>
+                        <p class="mb-0 text-text/90">Get started with zero risk—experience the power of AI without paying anything upfront.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-4">📞 Ready to subscribe?</h3>
+                        <p class="mb-6">Chat with us on WhatsApp to activate your free trial or get full setup help.</p>
+                        <a href="https://wa.me/201105713534" target="_blank" rel="noopener" class="btn btn-enhanced bg-[#25D366] hover:bg-[#128C7E] text-white px-8 py-4 rounded-lg inline-flex items-center transition-all transform hover:scale-105 hover:shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            Start WhatsApp Chat
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="index.html" class="btn btn-secondary inline-flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                        </svg>
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-16 bg-transparent relative border-t border-white/10">
+        <!-- Dark overlay for readability -->
+        <div class="absolute inset-0 bg-background/20"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="flex items-center">
+                        <img src="image/logo.png" alt="Logo" class="h-10 w-auto">
+                    </a>
+                </div>
+
+                <div class="flex space-x-4">
+                    <a href="https://wa.me/201105713534" target="_blank" rel="noopener" class="text-text hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.787"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/algobot.ai/" target="_blank" rel="noopener" class="text-text hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/share/16eqHUs1Ey/" target="_blank" rel="noopener" class="text-text hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm text-text">
+                <p>&copy; 2025 Algo AI Chatbot . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
